@@ -73,4 +73,6 @@ dependencies {
     //Lottie and LibPhone
     api 'com.googlecode.libphonenumber:libphonenumber:8.12.18'
     api 'com.airbnb.android:lottie:3.6.0'
+
+    api 'testfairy:testfairy-android-sdk:1.+@aar'
 }
