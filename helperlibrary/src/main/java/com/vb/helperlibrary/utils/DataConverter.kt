@@ -11,7 +11,7 @@ class DataConverter {
                 val mJson = JsonParser.parseString(jsonObject.toString())
                 return Gson().fromJson(mJson, clazz)
             } catch (e: Exception) {
-                throw Exception("")
+                throw Exception("error convert json string to object, maybe your data is wrong format")
             }
         }
 
@@ -19,7 +19,7 @@ class DataConverter {
             try {
                 return Gson().fromJson(mJson, clazz)
             } catch (e: Exception) {
-                throw Exception("")
+                throw Exception("error convert json string to object, maybe your data is wrong format")
             }
 
         }
@@ -28,7 +28,7 @@ class DataConverter {
             try {
                 return Gson().toJson(data)
             } catch (e: Exception) {
-                throw Exception("")
+                throw Exception("error convert object to json, maybe your data is wrong format")
             }
         }
     }
