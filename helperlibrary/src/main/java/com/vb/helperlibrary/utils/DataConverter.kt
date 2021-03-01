@@ -7,16 +7,29 @@ import org.json.JSONObject
 class DataConverter {
     companion object {
         fun convertJsonStringToObject(jsonObject: JSONObject, clazz: Class<*>): Any {
-            val mJson = JsonParser.parseString(jsonObject.toString())
-            return Gson().fromJson(mJson, clazz)
+            try {
+                val mJson = JsonParser.parseString(jsonObject.toString())
+                return Gson().fromJson(mJson, clazz)
+            } catch (e: Exception) {
+                throw Exception("")
+            }
         }
 
         fun convertJsonStringToObject(mJson: String, clazz: Class<*>): Any {
-            return Gson().fromJson(mJson, clazz)
+            try {
+                return Gson().fromJson(mJson, clazz)
+            } catch (e: Exception) {
+                throw Exception("")
+            }
+
         }
 
         fun objectItemToJsonStringConvert(data: Any): String {
-            return Gson().toJson(data)
+            try {
+                return Gson().toJson(data)
+            } catch (e: Exception) {
+                throw Exception("")
+            }
         }
     }
 }
