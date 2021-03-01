@@ -13,7 +13,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        archivesBaseName = "helperlibrary"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -34,6 +34,14 @@ android {
     buildFeatures {
         dataBinding = true
         viewBinding true
+    }
+
+    libraryVariants.all { variant ->
+        variant.outputs.all { output ->
+            if (outputFileName.endsWith('.aar')) {
+                outputFileName = "${archivesBaseName}-${variant.name}-${defaultConfig.versionName}.aar"
+            }
+        }
     }
 }
 
@@ -76,3 +84,4 @@ dependencies {
 
     api 'testfairy:testfairy-android-sdk:1.+@aar'
 }
+
