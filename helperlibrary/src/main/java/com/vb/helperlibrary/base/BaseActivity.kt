@@ -18,6 +18,8 @@ abstract class BaseActivity: DaggerAppCompatActivity() {
         super.onCreate(savedInstanceState)
     }
 
+    protected open fun unSubscribeViewModel() {
 
+    }
 
 }
