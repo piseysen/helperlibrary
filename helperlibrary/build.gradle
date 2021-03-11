@@ -11,8 +11,8 @@ android {
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 30
-        versionCode 3
-        versionName "1.2"
+        versionCode 4
+        versionName "1.3"
         archivesBaseName = "helperlibrary"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -81,6 +81,13 @@ dependencies {
     //Lottie and LibPhone
     api 'com.googlecode.libphonenumber:libphonenumber:8.12.18'
     api 'com.airbnb.android:lottie:3.6.0'
+
+    //Keyboard Event
+    api 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC2'
+
+    //Glide
+    api 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
     api 'testfairy:testfairy-android-sdk:1.+@aar'
 }
