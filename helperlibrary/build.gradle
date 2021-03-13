@@ -90,7 +90,7 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
     //Permission
-    implementation 'com.karumi:dexter:6.0.0'
+    api 'com.karumi:dexter:6.0.0'
 
     api 'testfairy:testfairy-android-sdk:1.+@aar'
 }
