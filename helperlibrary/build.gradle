@@ -11,8 +11,8 @@ android {
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 30
-        versionCode 5
-        versionName "1.4"
+        versionCode 6
+        versionName "1.5"
         archivesBaseName = "helperlibrary"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -91,6 +91,10 @@ dependencies {
 
     //Permission
     api 'com.karumi:dexter:6.0.0'
+
+    // Auto Receive OTP Code
+    api 'com.google.android.gms:play-services-auth:19.0.0'
+    api 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
 
     api 'testfairy:testfairy-android-sdk:1.+@aar'
 }
