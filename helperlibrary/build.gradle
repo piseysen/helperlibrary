@@ -96,6 +96,8 @@ dependencies {
     api 'com.google.android.gms:play-services-auth:19.0.0'
     api 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
 
+    api "androidx.collection:collection-ktx:1.1.0"
+
     api 'testfairy:testfairy-android-sdk:1.+@aar'
 }
 
