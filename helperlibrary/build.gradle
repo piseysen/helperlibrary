@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        minSdkVersion 22
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 7
         versionName "1.6"
@@ -101,6 +101,6 @@ dependencies {
     //scan text
     api 'com.github.Lucem-Anb:android-text-scanner:0.1.0'
 
-    api 'testfairy:testfairy-android-sdk:1.+@aar'
+    //api 'testfairy:testfairy-android-sdk:1.+@aar'
 }
 
